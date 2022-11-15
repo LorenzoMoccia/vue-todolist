@@ -35,3 +35,8 @@ body{
 .input-todo{
     width: 40%;
 }
+
+li{
+    display: flex;
+    justify-content: space-between;
+}
