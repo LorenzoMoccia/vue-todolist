@@ -22,8 +22,8 @@
 
         <div class="container-body">
             <ul>
-                <li>
-                    Ciao
+                <li v-for="(todo, index) in toDoList">
+                    {{todo.task}}
                     <i class="fa-solid fa-x"></i>
                 </li>
             </ul>
