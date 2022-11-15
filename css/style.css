@@ -6,4 +6,20 @@
 
 body{
     height: 100vh;
+    background-color: gray;
+}
+
+.container{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.logo{
+    width: 300px;
+}
+
+.input-todo{
+    width: 40%;
 }
