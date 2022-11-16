@@ -23,7 +23,7 @@ const { createApp } = Vue
 
 
 
-        
+
     }
   },
 
@@ -38,8 +38,11 @@ const { createApp } = Vue
       }
 
       console.log(this.newTask);
-   }
+   },
       
+   onRemoveTask(index){
+    this.toDoList.splice(index, 1)
+   }
       
    
 
