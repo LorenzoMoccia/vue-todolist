@@ -40,3 +40,7 @@ li{
     display: flex;
     justify-content: space-between;
 }
+
+.text2{
+    text-decoration: line-through;
+}

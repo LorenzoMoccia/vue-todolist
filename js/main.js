@@ -5,18 +5,19 @@ const { createApp } = Vue
       return {
 
         newTask: {
-          name: ""
+          name: "",
+          isDone: false
         },
 
 
         toDoList: [
           {
               name: "Lavare i piatti",
-              
+              isDone: true
           },
           {
               name: "Dare da mangiare ai gatti",
-             
+              isDone: true
           }
         ]
 
@@ -30,15 +31,14 @@ const { createApp } = Vue
   methods:{
 
 
-   onAddTask(){
-      this.toDoList.push(this.newTask);
-
-      this.newTask = {
-        name: ""
-      }
-
-      console.log(this.newTask);
-   },
+    onAddTask() {
+      this.toDoList.push({
+          name: this.newTask.name,
+          isDone: false
+      });
+      
+      this.newTask.name = "";
+  },
       
    onRemoveTask(index){
     this.toDoList.splice(index, 1)
